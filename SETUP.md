@@ -1,0 +1,75 @@
+# Getting started (on MOL)
+
+We use
+[(bio)conda](https://doi.org/10.1038/s41592-018-0046-7)
+throughout the course. Install from Terminal
+[as described here](https://docs.anaconda.com/free/anaconda/install/linux/).
+The default shell may be set to tcsh (not bash); therefore may need to switch to bash manually:
+
+```
+$ bash
+$ wget https://repo.anaconda.com/archive/Anaconda3-2023.09-0-Linux-x86_64.sh
+$ bash https://repo.anaconda.com/archive/Anaconda3-2023.09-0-Linux-x86_64.sh
+```
+
+Check the CUDA Toolkit version installed (11.7):
+```
+$ nvcc --version
+nvcc: NVIDIA (R) Cuda compiler driver
+Copyright (c) 2005-2022 NVIDIA Corporation
+Built on Wed_Jun__8_16:49:14_PDT_2022
+Cuda compilation tools, release 11.7, V11.7.99
+Build cuda_11.7.r11.7/compiler.31442593_0
+```
+
+Install the latest versions of PyTorch and associated packages still compatible with the CUDA version.
+The example below was obtained from the list of
+[previous versions](https://pytorch.org/get-started/previous-versions/)
+on the CUDA web site, and searching for `11.7`.
+
+```
+$ conda install pytorch==2.0.1 torchvision==0.15.2 torchaudio==2.0.2 pytorch-cuda=11.7 -c pytorch -c nvidia
+```
+
+Continue by installing
+[Pytorch Lightning](https://lightning.ai/docs/pytorch/stable/)
+and
+[TensorBoard](https://www.tensorflow.org/tensorboard/get_started) (lab 1):
+```
+$ conda install lightning tensorboard -c conda-forge
+```
+
+And the Transformers library form Hugging Face (lab 4):
+```
+$ conda install conda-forge::biopython conda-forge::datasets conda-forge::evaluate conda-forge::transformers
+```
+
+Quick check that the GPU is available from python:
+```
+$ python
+Python 3.11.5 (main, Sep 11 2023, 13:54:46) [GCC 11.2.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import torch.cuda
+>>> torch.cuda.is_available()
+True
+```
+
+Install git & download the course repository (see
+[a blog post](https://medium.com/@protobioengineering/github-for-biologists-407fab350083)
+and
+[a paper](https://doi.org/10.1371/journal.pcbi.1004947)
+on using git):
+```
+$ conda install git
+$ git clone https://github.com/evocellnet/bc_deep_learning.git
+```
+
+Go to the repository, and launch jupyter lab:
+```
+$ cd ~/bc_deep_learning/
+$ jupyter lab
+```
+
+At the end of the course, please
+[clean up anaconda](https://docs.anaconda.com/free/anaconda/install/uninstall/),
+and remove the course repository/other files from the machine you've been using.
