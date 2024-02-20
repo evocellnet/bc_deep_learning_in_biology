@@ -64,7 +64,7 @@ and
 on using git):
 ```
 conda install git
-git clone https://github.com/evocellnet/bc_deep_learning.git
+git clone https://github.com/evocellnet/bc_deep_learning_in_biology/
 ```
 
 Go to the repository, and launch jupyter lab:
