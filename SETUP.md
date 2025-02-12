@@ -24,7 +24,6 @@ bash Anaconda3-2024.10-1-Linux-x86_64.sh -b
 source ~/anaconda3/bin/activate
 conda init --all
 conda env update --prune --file=https://raw.githubusercontent.com/evocellnet/bc_deep_learning_in_biology/refs/heads/main/block-course-export.yaml 
-pip install py3Dmol accelerate
 exit
 ```
 
@@ -32,15 +31,10 @@ Download the course repository using git (see
 [a blog post](https://medium.com/@protobioengineering/github-for-biologists-407fab350083)
 and
 [a paper](https://doi.org/10.1371/journal.pcbi.1004947)
-):
+), go to the repository, and launch jupyter lab:
 ```
 bash
 git clone https://github.com/evocellnet/bc_deep_learning_in_biology/
-```
-
-Go to the repository, and launch jupyter lab:
-```
-bash
 cd ~/bc_deep_learning_in_biology/
 jupyter lab
 ```
