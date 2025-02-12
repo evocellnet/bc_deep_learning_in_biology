@@ -1,0 +1,20 @@
+channels:
+- nvidia
+- pytorch
+- bioconda
+- conda-forge
+- defaults
+dependencies:
+- anaconda
+- conda
+- git
+- pytorch==2.0.1
+- torchvision==0.15.2
+- torchaudio==2.0.2
+- pytorch-cuda=11.7
+- lightning
+- tensorboard
+- biopython 
+- transformers
+- datasets
+- evaluate
