@@ -19,6 +19,7 @@ wget https://repo.anaconda.com/archive/Anaconda3-2024.10-1-Linux-x86_64.sh
 bash Anaconda3-2024.10-1-Linux-x86_64.sh -b
 source ~/anaconda3/bin/activate
 conda init --all
+conda env update --prune --file=https://raw.githubusercontent.com/evocellnet/bc_deep_learning_in_biology/refs/heads/main/block-course-export.yaml 
 exit
 ```
 
@@ -26,7 +27,6 @@ exit
 bash
 git clone https://github.com/evocellnet/bc_deep_learning_in_biology/
 cd bc_deep_learning_in_biology
-conda env update --prune --file=block-course.yaml 
 ```
 
 For some commands below, do not copy the preceeding `$` or `>>>` signs. They simply indicate commands compared to the output. 
