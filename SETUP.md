@@ -8,8 +8,23 @@ The default shell may be set to tcsh (not bash); therefore may need to switch to
 Copy the following commands and run them in a terminal window. 
 ```
 bash
+conda init --reverse --all
+rm -rf ~/anaconda3
+exit
+```
+
+```
+bash
 wget https://repo.anaconda.com/archive/Anaconda3-2023.09-0-Linux-x86_64.sh
-bash Anaconda3-2023.09-0-Linux-x86_64.sh
+bash Anaconda3-2023.09-0-Linux-x86_64.sh -b
+exit
+```
+
+```
+bash
+git clone https://github.com/evocellnet/bc_deep_learning_in_biology/
+cd bc_deep_learning_in_biology
+conda env update --prune --file=block-course.yaml 
 ```
 
 For some commands below, do not copy the preceeding `$` or `>>>` signs. They simply indicate commands compared to the output. 
