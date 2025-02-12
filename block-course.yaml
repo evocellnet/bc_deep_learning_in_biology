@@ -18,3 +18,5 @@ dependencies:
 - transformers
 - datasets
 - evaluate
+- py3dmol
+- accelerate
