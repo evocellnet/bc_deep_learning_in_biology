@@ -47,3 +47,10 @@ jupyter lab
 At the end of the course, please
 [clean up anaconda](https://docs.anaconda.com/free/anaconda/install/uninstall/),
 and remove the course repository/other files from the machine you've been using.
+```
+bash
+rm -rf ~/bc_deep_learning_in_biology/
+conda init --reverse --all
+rm -rf ~/anaconda3
+exit
+```
