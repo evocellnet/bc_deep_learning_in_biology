@@ -4,4 +4,4 @@ Repository for lab and project materials for the course. Contents will be added 
 
 - See [SETUP.md](SETUP.md) for instructions on installing the software needed for the course.
 - Slides for the project on [predicting protein stability](https://docs.google.com/presentation/d/1LHVXaLw9LZqs0jbl5CNjh0DP1sQ6jmM_mqW3fHNMRBE/edit?usp=sharing)
-    - Link to the main paper ([Dieckhaus et al., 2014](https://doi.org/10.1073/pnas.2314853121))
+    - Link to the main paper ([Dieckhaus et al., 2023](https://doi.org/10.1073/pnas.2314853121))
