@@ -9,6 +9,8 @@ Introduction to protein language models (PLM) using ESM-2 ([Lin et al., 2023](ht
 [2_plm-fine-tuning.ipynb](2_plm-fine-tuning.ipynb):
 * Fine-tune ESM-2 to predict protein localisation from sequence, using the setup from ([Moreno et al., 2024](https://doi.org/10.1093/bioinformatics/btae677))
 
+[Introductory slides with additional tips](https://docs.google.com/presentation/d/1u7EPsPjgfcIPTVddsBwsFE7mlGFnAv45bJf4gaFaqEE/edit?usp=sharing)
+
 ## Further reading
 * [Various materials on transformers (Hacker News post)](https://news.ycombinator.com/item?id=35712334)
 * Practical examples of fine-tuning ESM-2: [predicting PTM sites](https://huggingface.co/blog/AmelieSchreiber/esm2-ptm), [designing peptide binders](https://huggingface.co/blog/AmelieSchreiber/esm-interact), [predicting the effects of individual mutations](https://huggingface.co/blog/AmelieSchreiber/mutation-scoring)
