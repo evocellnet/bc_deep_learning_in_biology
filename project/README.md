@@ -15,6 +15,7 @@ The data folder you download contains the following files:
 - **mega_train.csv** / **mega_val.csv**: CSV files with metadata and labels for train/validation splits
   - Contains columns like: name, mutation info, wild-type sequence, mutated sequence, ΔΔG values
   - **mega_test.csv** for the final testing of the models will be released towards the end of the project.
+- **embeddings**: pre-computed protein embeddings, in case you decide to use them as input (see below).
 
 
 ## Code Strcuture and Input Options
