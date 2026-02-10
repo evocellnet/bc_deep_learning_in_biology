@@ -8,15 +8,12 @@ We use accumulated data from experimental databases, specifically the Megascale 
 
 The dataset includes measurements of changes in Gibbs free energy ($\Delta \Delta G$). This is the value you need to predict for a given protein with a point mutation.
 
-## Available Files
-
 The data folder you download contains the following files:
 
 - **mega_train.csv** / **mega_val.csv**: CSV files with metadata and labels for train/validation splits
   - Contains columns like: name, mutation info, wild-type sequence, mutated sequence, ΔΔG values
   - **mega_test.csv** for the final testing of the models will be released towards the end of the project.
 - **embeddings**: pre-computed protein embeddings, in case you decide to use them as input (see below).
-
 
 ## Code Strcuture and Input Options
 We provide some Jupyter notebooks that you can start with. They already implement dataloading and some simple visualization.
@@ -26,6 +23,7 @@ You can build your model using:
 2. **ESM Embedding-based**: Precomputed embeddings from ESM - see `stability_prediction_from_embeddings.ipynb`
 3. **Own ideas**: You can come up with and try any input or other type of model
 
+If you want to compute your own embeddings, e.g. from other layers or larger ESM models, feel free to do so. You can adjust the code in `stability_prediction_more_embeddings.ipynb`. 
 
 ## Benchmark Baseline
 
