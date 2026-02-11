@@ -2,7 +2,7 @@
 
 In this project, you will predict protein stability changes upon point mutations. 
 
-We use accumulated data from experimental databases, specifically the Megascale dataset. A current [paper](https://www.pnas.org/doi/10.1073/pnas.2314853121) has preprocessed the dataset and created homology-reduced data splits. We reuse these splits. To get started, download the data folder from [here](https://polybox.ethz.ch/index.php/s/txvcb5jKy1A0TbY) and unzip it.
+We use accumulated data from experimental databases, specifically the Megascale dataset. A current [paper](https://www.pnas.org/doi/10.1073/pnas.2314853121) has preprocessed the dataset and created homology-reduced data splits. We reuse these splits. To get started, download the data from [here](https://polybox.ethz.ch/index.php/s/BDgFSG5zPHB3R9H).
 
 ## Data Overview
 
@@ -13,7 +13,7 @@ The data folder you download contains the following files:
 - **mega_train.csv** / **mega_val.csv**: CSV files with metadata and labels for train/validation splits
   - Contains columns like: name, mutation info, wild-type sequence, mutated sequence, ΔΔG values
   - **mega_test.csv** for the final testing of the models will be released towards the end of the project.
-- **embeddings**: pre-computed protein embeddings, in case you decide to use them as input (see below).
+- **embedding_data.zip**: pre-computed protein embeddings, in case you decide to use them as input (see below). To use download and unzip the folder.
 
 ## Code Strcuture and Input Options
 We provide some Jupyter notebooks that you can start with. They already implement dataloading and some simple visualization.
