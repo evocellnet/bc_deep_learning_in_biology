@@ -9,21 +9,23 @@ Copy the following commands and run them in a terminal window.
 ```
 bash
 conda init --reverse --all
-rm -rf ~/anaconda3
+rm -rf ~/anaconda3 ~/bc_deep_learning_in_biology ~/miniconda3
 exit
 ```
 
-Next, install anaconda, and deep learning libraries used throughout the course such as
+Next, install
+[miniconda](https://www.anaconda.com/docs/getting-started/miniconda/install#linux-2), and deep learning libraries used throughout the course such as
 [Pytorch Lightning](https://lightning.ai/docs/pytorch/stable/),
 [TensorBoard](https://www.tensorflow.org/tensorboard/get_started),
 and others:
 ```
 bash
-wget https://repo.anaconda.com/archive/Anaconda3-2024.10-1-Linux-x86_64.sh
-bash Anaconda3-2024.10-1-Linux-x86_64.sh -b
-source ~/anaconda3/bin/activate
+mkdir -p ~/miniconda3
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda3/miniconda.sh
+bash ~/miniconda3/miniconda.sh -b -u -p ~/miniconda3
+rm ~/miniconda3/miniconda.sh
+source ~/miniconda3/bin/activate
 conda init --all
-conda env update --prune --file=https://raw.githubusercontent.com/evocellnet/bc_deep_learning_in_biology/refs/heads/main/block-course-export.yaml 
 exit
 ```
 
