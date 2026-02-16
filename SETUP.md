@@ -20,9 +20,9 @@ Next, install
 and others:
 ```
 bash
+git clone https://github.com/evocellnet/bc_deep_learning_in_biology/
 cd ~/bc_deep_learning_in_biology/
 pip install uv
-git clone https://github.com/evocellnet/bc_deep_learning_in_biology/
 uv sync
 exit
 ```
@@ -35,7 +35,6 @@ and
 ```
 bash
 cd ~/bc_deep_learning_in_biology/
-git clone https://github.com/evocellnet/bc_deep_learning_in_biology/
 uv run jupyter lab
 ```
 
