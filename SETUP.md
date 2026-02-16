@@ -1,9 +1,7 @@
 # Getting started (on MOL)
 
-We use
-[(bio)conda](https://doi.org/10.1038/s41592-018-0046-7)
-throughout the course.
-Use the commands below to remove the existing conda installation if needed.
+We use `uv` throughout the course.
+Use the commands below to remove the existing installation if needed.
 The default shell may be set to tcsh (not bash); therefore may need to switch to bash manually. 
 Copy the following commands and run them in a terminal window. 
 ```
