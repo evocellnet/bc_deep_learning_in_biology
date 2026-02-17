@@ -23,6 +23,7 @@ and the deep learning libraries used throughout the course such as
 [TensorBoard](https://www.tensorflow.org/tensorboard/get_started):
 ```
 bash
+export PATH="$HOME/.local/bin:$PATH"
 git clone https://github.com/evocellnet/bc_deep_learning_in_biology/
 cd ~/bc_deep_learning_in_biology/
 pip install uv
