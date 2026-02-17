@@ -34,6 +34,7 @@ exit
 Finally launch jupyter lab:
 ```
 bash
+export PATH="$HOME/.local/bin:$PATH"
 cd ~/bc_deep_learning_in_biology/
 uv run jupyter lab
 ```
