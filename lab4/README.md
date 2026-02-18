@@ -14,7 +14,7 @@ Introduction to protein language models (PLM) using ESM-2 ([Lin et al., 2023](ht
 ## Further reading
 * [Various materials on transformers (Hacker News post)](https://news.ycombinator.com/item?id=35712334)
 * Practical examples of fine-tuning ESM-2: [predicting PTM sites](https://huggingface.co/blog/AmelieSchreiber/esm2-ptm), [designing peptide binders](https://huggingface.co/blog/AmelieSchreiber/esm-interact), [predicting the effects of individual mutations](https://huggingface.co/blog/AmelieSchreiber/mutation-scoring)
-* [Hugging Face NLP Course](https://huggingface.co/learn/nlp-course/) has practical examples for using the libraries: 
+* [Hugging Face LLM Course](https://huggingface.co/learn/llm-course/) has practical examples for using the libraries: 
 [datasets](https://huggingface.co/docs/datasets/index),
 [evaluate](https://huggingface.co/docs/evaluate/index),
 [transformers](https://huggingface.co/docs/transformers/index)
